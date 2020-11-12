@@ -19,4 +19,12 @@ public class StockOperationService {
     public List<Share> getAllShares() {
        return stockOperationRepository.getAllShares();
     }
+
+    public Share getShareById(String id) {
+       return stockOperationRepository.getAllShares().stream().filter( s -> s.getShareId().equals(id)).findFirst().get();
+    }
+
+    public Share getShareByName(String name) {
+        return stockOperationRepository.getAllShares().stream().filter( s -> s.getShareDetails().getDisplayName().equals(name)).findFirst().get();
+    }
 }

@@ -11,8 +11,8 @@
 	<groupId>com.assignment.exc</groupId>
 	<artifactId>StockOperation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ShockOperation</name>
-	<description>Shock Operation - Bying, retrieving, selling</description>
+	<name>StockOperation</name>
+	<description>Stock Operation - Bying, retrieving, selling</description>
 
 	<properties>
 		<java.version>1.8</java.version>

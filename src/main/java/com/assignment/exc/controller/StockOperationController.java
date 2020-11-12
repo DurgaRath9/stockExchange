@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 @Controller
 public class StockOperationController {
@@ -21,6 +22,17 @@ public class StockOperationController {
     public ResponseEntity getAllShares(){
         return ResponseEntity.status(HttpStatus.OK).body(stockOperationService.getAllShares());
     }
+
+    @GetMapping("shares/v1/shares/byId/{id}")
+    public ResponseEntity getShareById(@PathVariable String id){
+        return ResponseEntity.status(HttpStatus.OK).body(stockOperationService.getShareById(id));
+    }
+
+    @GetMapping("shares/v1/shares/byName/{name}")
+    public ResponseEntity getShareByName(@PathVariable String name){
+        return ResponseEntity.status(HttpStatus.OK).body(stockOperationService.getShareByName(name));
+    }
+
 
 
 }
