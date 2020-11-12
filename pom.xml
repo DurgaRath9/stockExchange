@@ -12,7 +12,7 @@
 	<artifactId>StockOperation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>StockOperation</name>
-	<description>Stock Operation - Bying, retrieving, selling</description>
+	<description>StockOperation - Bying, retrieving, selling</description>
 
 	<properties>
 		<java.version>1.8</java.version>
