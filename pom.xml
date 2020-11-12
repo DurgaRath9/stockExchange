@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.assignment.exc</groupId>
-	<artifactId>ShockOperation</artifactId>
+	<artifactId>StockOperation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ShockOperation</name>
 	<description>Shock Operation - Bying, retrieving, selling</description>
