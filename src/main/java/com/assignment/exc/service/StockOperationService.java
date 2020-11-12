@@ -27,4 +27,10 @@ public class StockOperationService {
     public Share getShareByName(String name) {
         return stockOperationRepository.getAllShares().stream().filter( s -> s.getShareDetails().getDisplayName().equals(name)).findFirst().get();
     }
+
+	public Share getRecommendation() {
+		// TODO Auto-generated method stub
+		
+		return stockOperationRepository.getRecommendation();
+	}
 }

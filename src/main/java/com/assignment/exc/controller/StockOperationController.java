@@ -32,7 +32,10 @@ public class StockOperationController {
     public ResponseEntity getShareByName(@PathVariable String name){
         return ResponseEntity.status(HttpStatus.OK).body(stockOperationService.getShareByName(name));
     }
-
-
+    
+    @GetMapping("shares/v1/shares/recommendation")
+    public ResponseEntity getRecommendation(@PathVariable String name){
+        return ResponseEntity.status(HttpStatus.OK).body(stockOperationService.getRecommendation());
+    }
 
 }

@@ -40,4 +40,10 @@ public class StockOperationRepository {
 
         return shares;
     }
+
+
+	public Share getRecommendation() {
+		
+		return null;
+	}
 }
